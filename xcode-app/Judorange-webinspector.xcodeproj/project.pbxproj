@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD4166E222C5781500F1EAF0 /* website in Resources */ = {isa = PBXBuildFile; fileRef = CD4166E122C5781500F1EAF0 /* website */; };
+		CD44105822DD347700F601A5 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44105722DD347700F601A5 /* extensions.swift */; };
+		CD44105A22DD479D00F601A5 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44105922DD479D00F601A5 /* colors.swift */; };
+		CD44105C22DE588900F601A5 /* judorange-check.js in Resources */ = {isa = PBXBuildFile; fileRef = CD44105B22DE588900F601A5 /* judorange-check.js */; };
+		CD44105E22DE63BB00F601A5 /* catch_startup_errors.js in Resources */ = {isa = PBXBuildFile; fileRef = CD44105D22DE63BB00F601A5 /* catch_startup_errors.js */; };
+		CD67379722C57FEC0079C5A6 /* judorange.js in Resources */ = {isa = PBXBuildFile; fileRef = CD67379622C57FEC0079C5A6 /* judorange.js */; };
+		CD67379922C580110079C5A6 /* zoomlock.js in Resources */ = {isa = PBXBuildFile; fileRef = CD67379822C580110079C5A6 /* zoomlock.js */; };
+		CD8505F522DE77AA006FD5BF /* retrieve_startup_errors.js in Resources */ = {isa = PBXBuildFile; fileRef = CD8505F422DE77AA006FD5BF /* retrieve_startup_errors.js */; };
+		CDAB0C5D22CAC269009B4EFD /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB0C5C22CAC269009B4EFD /* NavBarController.swift */; };
+		CDABF3BA22CE5F990081E300 /* judorange-init.js in Resources */ = {isa = PBXBuildFile; fileRef = CDABF3B922CE5F990081E300 /* judorange-init.js */; };
+		CDABF3BC22CE7C9E0081E300 /* WebViewsManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABF3BB22CE7C9E0081E300 /* WebViewsManagerController.swift */; };
+		CDABF3BE22D79F840081E300 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABF3BD22D79F840081E300 /* TabBarCustom.swift */; };
+		CDAC0AA022971DC000B55C5A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAC0A9F22971DC000B55C5A /* WebKit.framework */; };
+		CDAC0AA6229B14C400B55C5A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAC0AA5229B14C400B55C5A /* GameKit.framework */; };
+		CDAC0AA8229B14D400B55C5A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAC0AA7229B14D400B55C5A /* StoreKit.framework */; };
+		CDB981D422C55D3E00BC325A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB981D322C55D3E00BC325A /* Launch Screen.storyboard */; };
+		CDD8E3F22281F93000DDA793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E3F12281F93000DDA793 /* AppDelegate.swift */; };
+		CDD8E3F42281F93000DDA793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E3F32281F93000DDA793 /* ViewController.swift */; };
+		CDD8E3F72281F93000DDA793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD8E3F52281F93000DDA793 /* Main.storyboard */; };
+		CDD8E3F92281F93100DDA793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD8E3F82281F93100DDA793 /* Assets.xcassets */; };
+		CDF1A06622CC15420030D894 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1A06522CC15420030D894 /* WebViewController.swift */; };
+		CDF1A06822CC29EE0030D894 /* ToolBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1A06722CC29EE0030D894 /* ToolBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD6737AE22C58D730079C5A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD4166E122C5781500F1EAF0 /* website */ = {isa = PBXFileReference; lastKnownFileType = folder; path = website; sourceTree = "<group>"; };
+		CD44105722DD347700F601A5 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		CD44105922DD479D00F601A5 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		CD44105B22DE588900F601A5 /* judorange-check.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "judorange-check.js"; sourceTree = "<group>"; };
+		CD44105D22DE63BB00F601A5 /* catch_startup_errors.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = catch_startup_errors.js; sourceTree = "<group>"; };
+		CD67379622C57FEC0079C5A6 /* judorange.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = judorange.js; sourceTree = "<group>"; };
+		CD67379822C580110079C5A6 /* zoomlock.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = zoomlock.js; sourceTree = "<group>"; };
+		CD8505F422DE77AA006FD5BF /* retrieve_startup_errors.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = retrieve_startup_errors.js; sourceTree = "<group>"; };
+		CDAB0C5C22CAC269009B4EFD /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		CDABF3B922CE5F990081E300 /* judorange-init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "judorange-init.js"; sourceTree = "<group>"; };
+		CDABF3BB22CE7C9E0081E300 /* WebViewsManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewsManagerController.swift; sourceTree = "<group>"; };
+		CDABF3BD22D79F840081E300 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		CDAC0A9F22971DC000B55C5A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CDAC0AA5229B14C400B55C5A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		CDAC0AA7229B14D400B55C5A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CDB981D322C55D3E00BC325A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CDD8E3EE2281F93000DDA793 /* judOrange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = judOrange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD8E3F12281F93000DDA793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDD8E3F32281F93000DDA793 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDD8E3F62281F93000DDA793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDD8E3F82281F93100DDA793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDD8E3FD2281F93100DDA793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF1A06522CC15420030D894 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CDF1A06722CC29EE0030D894 /* ToolBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDD8E3EB2281F93000DDA793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAC0AA8229B14D400B55C5A /* StoreKit.framework in Frameworks */,
+				CDAC0AA022971DC000B55C5A /* WebKit.framework in Frameworks */,
+				CDAC0AA6229B14C400B55C5A /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDAC0A9E22971DBF00B55C5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDAC0AA7229B14D400B55C5A /* StoreKit.framework */,
+				CDAC0AA5229B14C400B55C5A /* GameKit.framework */,
+				CDAC0A9F22971DC000B55C5A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDD8E3E52281F93000DDA793 = {
+			isa = PBXGroup;
+			children = (
+				CDD8E3F02281F93000DDA793 /* Judorange-webinspector */,
+				CDD8E3EF2281F93000DDA793 /* Products */,
+				CDAC0A9E22971DBF00B55C5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDD8E3EF2281F93000DDA793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDD8E3EE2281F93000DDA793 /* judOrange.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDD8E3F02281F93000DDA793 /* Judorange-webinspector */ = {
+			isa = PBXGroup;
+			children = (
+				CD44105D22DE63BB00F601A5 /* catch_startup_errors.js */,
+				CD67379822C580110079C5A6 /* zoomlock.js */,
+				CD67379622C57FEC0079C5A6 /* judorange.js */,
+				CDABF3B922CE5F990081E300 /* judorange-init.js */,
+				CD44105B22DE588900F601A5 /* judorange-check.js */,
+				CD8505F422DE77AA006FD5BF /* retrieve_startup_errors.js */,
+				CDD8E3F12281F93000DDA793 /* AppDelegate.swift */,
+				CDD8E3F32281F93000DDA793 /* ViewController.swift */,
+				CDABF3BD22D79F840081E300 /* TabBarCustom.swift */,
+				CDAB0C5C22CAC269009B4EFD /* NavBarController.swift */,
+				CDF1A06722CC29EE0030D894 /* ToolBarController.swift */,
+				CDABF3BB22CE7C9E0081E300 /* WebViewsManagerController.swift */,
+				CDF1A06522CC15420030D894 /* WebViewController.swift */,
+				CD44105722DD347700F601A5 /* extensions.swift */,
+				CD44105922DD479D00F601A5 /* colors.swift */,
+				CDD8E3F52281F93000DDA793 /* Main.storyboard */,
+				CDB981D322C55D3E00BC325A /* Launch Screen.storyboard */,
+				CD4166E122C5781500F1EAF0 /* website */,
+				CDD8E3F82281F93100DDA793 /* Assets.xcassets */,
+				CDD8E3FD2281F93100DDA793 /* Info.plist */,
+			);
+			path = "Judorange-webinspector";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDD8E3ED2281F93000DDA793 /* Judorange-webinspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDD8E4002281F93100DDA793 /* Build configuration list for PBXNativeTarget "Judorange-webinspector" */;
+			buildPhases = (
+				CDD8E3EA2281F93000DDA793 /* Sources */,
+				CDD8E3EB2281F93000DDA793 /* Frameworks */,
+				CDD8E3EC2281F93000DDA793 /* Resources */,
+				CD6737AE22C58D730079C5A6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Judorange-webinspector";
+			productName = "web_dev_browser-v0";
+			productReference = CDD8E3EE2281F93000DDA793 /* judOrange.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDD8E3E62281F93000DDA793 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Julien Cuénot";
+				TargetAttributes = {
+					CDD8E3ED2281F93000DDA793 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CDD8E3E92281F93000DDA793 /* Build configuration list for PBXProject "Judorange-webinspector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDD8E3E52281F93000DDA793;
+			productRefGroup = CDD8E3EF2281F93000DDA793 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDD8E3ED2281F93000DDA793 /* Judorange-webinspector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDD8E3EC2281F93000DDA793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD67379722C57FEC0079C5A6 /* judorange.js in Resources */,
+				CD4166E222C5781500F1EAF0 /* website in Resources */,
+				CDABF3BA22CE5F990081E300 /* judorange-init.js in Resources */,
+				CD44105C22DE588900F601A5 /* judorange-check.js in Resources */,
+				CDD8E3F92281F93100DDA793 /* Assets.xcassets in Resources */,
+				CD8505F522DE77AA006FD5BF /* retrieve_startup_errors.js in Resources */,
+				CDB981D422C55D3E00BC325A /* Launch Screen.storyboard in Resources */,
+				CD67379922C580110079C5A6 /* zoomlock.js in Resources */,
+				CD44105E22DE63BB00F601A5 /* catch_startup_errors.js in Resources */,
+				CDD8E3F72281F93000DDA793 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDD8E3EA2281F93000DDA793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD8E3F42281F93000DDA793 /* ViewController.swift in Sources */,
+				CDF1A06822CC29EE0030D894 /* ToolBarController.swift in Sources */,
+				CDAB0C5D22CAC269009B4EFD /* NavBarController.swift in Sources */,
+				CD44105822DD347700F601A5 /* extensions.swift in Sources */,
+				CDABF3BC22CE7C9E0081E300 /* WebViewsManagerController.swift in Sources */,
+				CDABF3BE22D79F840081E300 /* TabBarCustom.swift in Sources */,
+				CDD8E3F22281F93000DDA793 /* AppDelegate.swift in Sources */,
+				CD44105A22DD479D00F601A5 /* colors.swift in Sources */,
+				CDF1A06622CC15420030D894 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDD8E3F52281F93000DDA793 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDD8E3F62281F93000DDA793 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDD8E3FE2281F93100DDA793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDD8E3FF2281F93100DDA793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDD8E4012281F93100DDA793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M665P4HZY;
+				INFOPLIST_FILE = "judorange-webinspector/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.judev.judorange;
+				PRODUCT_NAME = judOrange;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDD8E4022281F93100DDA793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M665P4HZY;
+				INFOPLIST_FILE = "judorange-webinspector/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.judev.judorange;
+				PRODUCT_NAME = judOrange;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDD8E3E92281F93000DDA793 /* Build configuration list for PBXProject "Judorange-webinspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD8E3FE2281F93100DDA793 /* Debug */,
+				CDD8E3FF2281F93100DDA793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDD8E4002281F93100DDA793 /* Build configuration list for PBXNativeTarget "Judorange-webinspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD8E4012281F93100DDA793 /* Debug */,
+				CDD8E4022281F93100DDA793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDD8E3E62281F93000DDA793 /* Project object */;
+}
