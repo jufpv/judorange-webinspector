@@ -1,0 +1,83 @@
+{
+  "name": "eruda",
+  "version": "1.5.4",
+  "description": "Console for Mobile Browsers",
+  "main": "eruda.js",
+  "scripts": {
+    "ci": "npm run lint && npm run test && npm run build",
+    "build": "webpack --config script/webpack.dev.js && webpack --config script/webpack.release.js",
+    "cov": "npm run test && remap-istanbul -i coverage/coverage-final.json -o coverage/coverage-remapped.json -t json && node script/coverage",
+    "dev": "webpack-dev-server --config script/webpack.dev.js --host 0.0.0.0",
+    "test": "karma start",
+    "test:sauce": "karma start karma.sauce.js",
+    "format": "prettier *.js eustia/*.js src/**/*.{js,scss,css} script/*.js test/*.{js} --write",
+    "lint": "eslint src/**/*.js",
+    "setup": "node script/cpTestLib",
+    "genIcon": "node script/genIcon",
+    "genUtilDoc": "eustia doc src/lib/util.js -f md -o doc/UTIL_API.md -t \"Eruda Util Documentation\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run ci"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liriliri/eruda.git"
+  },
+  "keywords": [
+    "console",
+    "mobile",
+    "debug"
+  ],
+  "author": "redhoodsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liriliri/eruda/issues"
+  },
+  "homepage": "https://eruda.liriliri.io/",
+  "devDependencies": {
+    "autoprefixer": "^7.2.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "copy": "^0.3.1",
+    "css-loader": "^0.28.7",
+    "draggabilly": "^2.1.1",
+    "eslint": "^4.13.1",
+    "eslint-loader": "^1.9.0",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.6.0",
+    "husky": "^1.0.0-rc.9",
+    "istanbul": "^0.4.5",
+    "jasmine-core": "^2.8.0",
+    "jasmine-jquery": "^2.1.1",
+    "jquery": "^3.2.1",
+    "js-beautify": "^1.7.5",
+    "json-loader": "^0.5.7",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-jquery": "^0.2.2",
+    "karma-sauce-launcher": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-sourcemap-writer": "^0.1.2",
+    "karma-webpack": "^2.0.6",
+    "node-sass": "^4.7.2",
+    "postcss-class-prefix": "^0.3.0",
+    "postcss-loader": "^2.0.9",
+    "prettier": "^1.13.5",
+    "remap-istanbul": "^0.9.5",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.9.7",
+    "worker-loader": "^1.1.0"
+  },
+  "dependencies": {
+    "eruda-dom": "^1.0.2",
+    "interactjs": "^1.4.12"
+  }
+}

@@ -1,0 +1,18 @@
+<li>
+    {{#if displayHeader}}
+        <div class="eruda-header">
+            <span data-mark="time">{{time}}</span> <span>{{from}}</span>
+        </div>
+    {{/if}}
+    <div class="eruda-{{type}} eruda-log-item" data-id="{{id}}" data-type="{{type}}">
+        {{#if icon}}
+            <div class="eruda-icon-container">
+                <span class="eruda-icon eruda-icon-{{icon}}"></span>
+            </div>
+        {{/if}}
+        <div class="eruda-count eruda-hidden" data-mark="count"></div>
+        <div class="eruda-log-content-wrapper">
+            <div class="eruda-log-content">{{{msg}}}</div>
+        </div>
+    </div>
+</li>

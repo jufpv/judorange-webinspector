@@ -1,0 +1,39 @@
+.container {
+  .entry-btn {
+    /*width: 140px;
+    height: 40px;
+    */
+    
+    /*width:  auto;*/
+    /*height: auto*/
+    
+    width:  60px;
+    height: 60px;
+    
+    display:absolute;
+    
+    padding:8px 4px;
+    top:40vh; left:40vw;
+    background: #000;
+    opacity: 0.5;
+    border:2px solid #fe7e00;
+    /*border-radius: 10px;*/
+    border-radius:50%;
+    position: relative;
+    z-index: 10000000000; // 10 milliard (Plus que dev tools !)
+    transition: opacity 0.3s;
+    color:        #fe7e00;
+    text-align:   center;
+    font-size:    40px;
+    line-height:  40px;
+    &.active,
+    &:active {
+      opacity: 0.8;
+    }
+    
+    .icon-tool{ /*display:inline-block; vertical-align:middle;*/ }
+    
+    .text-tool{ display:/*inline-block*/none; vertical-align:middle; margin-left:10px; font-size:20px; }
+    
+  }
+}

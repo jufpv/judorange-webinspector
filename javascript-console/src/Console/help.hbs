@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each commands}}
+            <tr>
+                <td>{{@key}}</td>
+                <td>{{this}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Manual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/eruda.js"></script>
+    <script src="util.js"></script>
+</head>
+<body>
+<header>Manual Test</header>
+<nav>
+    <ul>
+        <li>
+            <a href="#" id="issue17">#17</a>
+        </li>
+        <li>
+            <a href="#" id="plugin">Plugin</a>
+        </li>
+        <li>
+            <a href="#" id="issue29">#29</a>
+        </li>
+        <li>
+            <a href="#" id="issue31">#31</a>
+        </li>
+        <li>
+            <a href="#" id="issue33">#33</a>
+        </li>
+        <li>
+            <a href="#" id="trigger-error">Trigger Error</a>
+        </li>
+        <li>
+            <a href="#" id="big-array">Big Array</a>
+        </li>
+        <li>
+            <a href="#" id="override-style">Override Style</a>
+        </li>
+        <li>
+            <a href="#" id="stringify-timing">Stringify Timing</a>
+        </li>
+    </ul>
+</nav>
+<script>
+    function addClickEvent(id, listener)
+    {
+        document.getElementById(id).addEventListener('click', function (e)
+        {
+            e.preventDefault();
+            listener();
+        }, false);
+    }
+    addClickEvent('issue17', function ()
+    {
+        let B = function () {};
+        let A = function () { this._data = 'eruda' };
+        A.prototype = Object.create(B.prototype);
+        Object.defineProperty(A.prototype, 'data', {
+            get: function () { return this._data }
+        });
+        let a = new A();
+        console.log(a);
+    });
+    addClickEvent('plugin', function ()
+    {
+        eruda.add({name: 'test'});
+        eruda.add(function (eruda)
+        {
+            return {
+                name: 'test2',
+                init: function ($el)
+                {
+                    this._$el = $el;
+                    this._$el.html('This is the new plugin');
+                }
+            };
+        });
+        let Tool = eruda.Tool;
+        eruda.add(new (Tool.extend({
+            name: 'test3',
+            init: function ($el) 
+            {
+                this.callSuper(Tool, 'init', arguments);
+                this._$el.html('This is another new plugin');
+            }
+        })));
+    });
+    addClickEvent('issue29', function () 
+    {
+        new Promise(function (resolve, reject)
+        {
+            resolve();
+        }).then(function (res)
+        {
+            let a = res.a;
+        })
+    });
+    addClickEvent('issue31', function () 
+    {
+        addEventListener('resize', function () {});
+    });
+    addClickEvent('issue33', function () 
+    {
+        util.evalCss(':root {--test: 10px;}');
+    });
+    addClickEvent('trigger-error', function () 
+    {
+        triggerError();
+    });
+    addClickEvent('big-array', function () 
+    {
+        let arr = [];
+        for (let i = 0; i < 10000; i++) {
+            arr.push(i);
+        }
+        console.log(arr);
+    });
+    addClickEvent('override-style', function () 
+    {
+        util.evalCss('.eruda-nav-bar {background: red !important;}');
+    });
+    addClickEvent('stringify-timing', function () {
+        console.time('stringify window')
+        eruda.Console.stringify(window)
+        console.timeEnd('stringify window')
+    })
+</script>
+<script>
+    eruda.init();
+    eruda.show();
+</script>
+</body>
+</html>

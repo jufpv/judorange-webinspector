@@ -1,0 +1,163 @@
+@import '../style/variable';
+@import '../style/mixin';
+
+.dev-tools {
+  .tools {
+    .resources {
+      height:100%;
+      
+      
+      .scrollcontainer-left{ overflow-y:auto!important; }
+      .scrollcontainer-right{ overflow-y:auto!important; }
+      .scrollcontent{ height:100%!important; min-height:calc(100% + 2px)!important; }
+      
+      
+      
+      .resources-scrollcontainer{
+          height:100%;
+          box-sizing:border-box;
+          font-size: 15px;
+          
+          
+          
+          .side-left{
+              position:relative;
+              overflow-y:auto;
+              width:50%; height:100%;
+              box-sizing:border-box; display:inline-block; vertical-align:top;
+          }
+          
+          .side-right{
+              position:relative;
+              overflow-y:auto;
+              width:50%; height:100%;
+              box-sizing:border-box; display:inline-block; vertical-align:top;
+              border-left:5px solid #e5e5e5;
+          }
+          
+          
+          
+          h1{
+              line-height:20px;
+              font-size:20px;
+              font-weight:600;
+              padding-top:10px;
+              padding-left:20px;
+              color: #fe7e00;
+          }
+          
+          .section {
+              margin: 10px 0px;
+              border-top: 1px solid $gray-light;
+              border-bottom: 1px solid $gray-light;
+              background-color:white;
+              overflow: hidden;
+          }
+          
+          .title {
+            @include right-circle-btn();
+            font-size: 17px;
+            padding: $padding;
+            color: $blue;
+            &.ok{ color:$green; }
+            &.warn{ color:$yellow; }
+            &.danger{ color:$red; }
+          }
+          
+          .titlename{ float:left; display:inline-block; vertical-align:middle; }
+          .btn{ float:left; display:inline-block; vertical-align:middle; width:50px; text-align:left; left:0px; margin:0px; padding:0px; }
+                
+          .link-list {
+            font-size:13px;
+            li {
+              padding: 10px;
+              /*background: #fff;*/
+              word-break: break-all;
+              a {
+                color: $blue !important;
+              }
+            }
+          }
+          
+          .image-list {
+            @include clear-float();
+            font-size: $font-size-s;
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            padding: $padding !important;
+            li {
+              flex-grow: 1;
+              cursor: pointer;
+              &.image {
+                height: 100px;
+                font-size: 0;
+              }
+              overflow-y: hidden;
+              img {
+                height: 100px;
+                min-width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size:13px;
+            td {
+              padding: 10px;
+              word-break: break-all;
+              &.key {
+                @include overflow-auto(x);
+                white-space: nowrap;
+                max-width: 120px;
+              }
+              &.control {
+                padding: 0;
+                font-size: 0;
+                width: 40px;
+                .icon-delete {
+                  cursor: pointer;
+                  color: $red;
+                  font-size: $font-size;
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  text-align: center;
+                  line-height: 40px;
+                  transition: color $anim-duration;
+                  &:active {
+                    color: $red-dark;
+                  }
+                }
+              }
+            }
+          }
+          
+      
+      }/*scrollcontainer*/
+      
+      
+      
+      /* SMALL WIDTH MODE  */
+      @media (max-width:600px){
+          .side-left{
+              width:100%!important; height:auto!important; overflow:hidden!important;
+          }
+          .side-right{
+              width:100%!important; height:auto!important; overflow:hidden!important;
+              border-left:none!important;
+              margin-top:50px;
+          }
+          .resources-scrollcontainer{
+              height:100%!important; overflow-y:auto!important;
+          }
+      }
+      
+      
+      
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div id="{{id}}" class="eruda-color">
+    <div class="eruda-head">
+        {{desc}}
+        <span class="eruda-val" style="background-color: {{val}}"></span>
+    </div>
+    <ul data-id="{{id}}">
+       {{#each colors}}
+           <li style="background: {{.}}"></li>
+       {{/each}}
+    </ul>
+</div>

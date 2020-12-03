@@ -1,0 +1,89 @@
+<div class="eruda-scrollcontainer">
+
+    <h1>Timing</h1>
+    
+    {{#if timing}}
+        <div class="eruda-performance-timing">
+            <div class="eruda-inner-wrapper">
+                {{#each data}}
+                    <div class="eruda-bar">
+                        <span style="position:relative;left:{{start}}%;width:{{len}}%">{{name}}({{duration}}ms)</span>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        
+        <h1>Timing data</h1>
+        
+        <div class="eruda-performance-timing-data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Time(ms)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each timing}}
+                        <tr>
+                            <td>{{@key}}</td>
+                            <td>{{this}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        
+    {{/if}}
+    
+    
+    
+    {{#if entries}}
+    
+        <h1>Resources timing</h1>
+        
+        <div class="eruda-performance-resource-timing">
+            
+            <div class="eruda-title">
+                Resource
+                <div class="eruda-btn eruda-refresh-resource-timing">
+                    <span class="eruda-icon-refresh"></span>
+                </div>
+            </div>
+            
+            <div class="eruda-entries">
+                <table>
+                    <tbody>
+                        {{#each entries}}
+                            <tr class="eruda-entry" data-idx="{{@key}}">
+                                <td>{{name}}</td>
+                                <td>{{#if initiatorType}}<span>{{initiatorType}}</span>{{/if}}</td>
+                                <td class="eruda-right">{{displayTime}}</td>
+                                <td class="eruda-blue">{{url}}</td>
+                            </tr>
+                            <tr>
+                                <td class="eruda-timeline" colspan="4">
+                                    <span style="border-left: 1px solid #707d8b; background: #707d8b; margin-left: {{timeline.left}}%; width: {{timeline.connection}}%;"></span>
+                                    <span style="background: #009688; width: {{timeline.ttfb}}%"></span>
+                                    <span style="background: #2196f3; width: {{timeline.response}}%"></span>
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    {{/if}}
+    
+    
+    
+    {{#if notSupported}}
+        <div class="eruda-not-supported">
+            Not supported for this browser!
+        </div>
+    {{/if}}
+
+
+
+</div>

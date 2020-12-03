@@ -1,0 +1,27 @@
+<div class='eruda-network-scrollcontainer'>
+    <div class='eruda-network-scrollcontent'>
+        <div class="eruda-title">
+            Requests
+            <div class="eruda-btn eruda-clear-request">
+                <span class="eruda-icon-clear"></span>
+            </div>
+        </div>
+        <ul class="eruda-requests">
+            {{#if requests}}
+                {{#each requests}}
+                    <li class="eruda-request {{#if hasErr}}eruda-error{{/if}}" data-id="{{@key}}">
+                        <span>{{name}}</span>
+                        <span>{{status}}</span>
+                        <span>{{method}}</span>
+                        <span>{{subType}}</span>
+                        <span>{{size}}</span>
+                        <span>{{displayTime}}</span>
+                        <span class="eruda-blue">{{url}}</span>
+                    </li>
+                {{/each}}
+            {{else}}
+                <li><span>Empty</span></li>
+            {{/if}}
+        </ul>
+    </div>
+</div>

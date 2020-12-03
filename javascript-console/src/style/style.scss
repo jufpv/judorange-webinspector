@@ -1,0 +1,53 @@
+@import 'variable';
+@import 'mixin';
+
+.container {
+  pointer-events: none;
+  will-change: transform;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; /*default value, resized by js*/
+  height: 100%; /*default value, resized by js*/
+  /*background-color:rgba(255,0,0,0.2);*/
+  z-index: 10000000000; // 10 milliard z-index max = 2 147 483 647 (2 milliards)
+  color: $gray-dark;
+  transform: translateZ(0);
+  font-family: $font-family;
+  font-size: $font-size;
+  direction: ltr;
+  * {
+    box-sizing: border-box;
+    pointer-events: all;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.blue {
+  color: $blue;
+}
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}

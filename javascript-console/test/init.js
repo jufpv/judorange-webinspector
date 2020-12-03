@@ -1,0 +1,3 @@
+eruda.init({
+  useShadowDom: false
+})

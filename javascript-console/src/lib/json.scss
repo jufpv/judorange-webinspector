@@ -1,0 +1,83 @@
+@import '../style/variable';
+@import '../style/mixin';
+
+.container .json {
+  @include overflow-auto(x);
+  cursor: default;
+  font-family: $font-family-code;
+  font-size: $font-size-s;
+  line-height: 1.2;
+  min-height: 100%;
+  color: $gray-dark;
+  &,
+  ul {
+    list-style: none !important;
+  }
+  ul {
+    padding: 0 !important;
+    padding-left: 15px !important;
+    margin: 0 !important;
+  }
+  li {
+    position: relative;
+    white-space: nowrap;
+    line-height: 16px;
+    min-height: 16px;
+  }
+  & > li > .key {
+    display: none;
+  }
+  & > li {
+    padding: $padding 0;
+  }
+  .array .object .key {
+    display: inline;
+  }
+  .null {
+    color: #0086b3;
+  }
+  .string {
+    color: #183691;
+  }
+  .number {
+    color: #0086b3;
+  }
+  .boolean {
+    color: #0086b3;
+  }
+  .special {
+    color: $gray;
+  }
+  .key {
+    color: #a71d5d;
+  }
+  .key-lighter {
+    color: #d391b5;
+  }
+  .expanded:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    position: absolute;
+    border-top-color: $gray;
+    left: -12px;
+    top: 6px;
+  }
+  .collapsed:before {
+    content: '';
+    border-left-color: $gray;
+    border-top-color: transparent;
+    left: -10px;
+    top: 4px;
+  }
+  li .collapsed ~ .close:before {
+    color: #999;
+  }
+  .hidden ~ ul {
+    display: none;
+  }
+  span {
+    position: static !important;
+  }
+}

@@ -1,0 +1,191 @@
+<div class="eruda-side-left eruda-scrollcontainer-left">
+    <div class="eruda-scrollcontent">
+    
+    <h1>Includes</h1>
+    
+    <div class="eruda-section eruda-stylesheet">
+        <h2 class="eruda-title {{stylesheetState}}">
+            Stylesheets
+            <div class="eruda-btn eruda-refresh-stylesheet">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+        </h2>
+        <ul class="eruda-link-list">
+            {{#if stylesheetData}}
+                {{#each stylesheetData}}
+                    <li>
+                        <a href="{{this}}" target="_blank" class="eruda-css-link">{{this}}</a>
+                    </li>
+                {{/each}}
+            {{else}}
+                <li>Empty</li>
+            {{/if}}
+        </ul>
+    </div>
+    
+    <div class="eruda-section eruda-script">
+        <h2 class="eruda-title {{scriptState}}">
+            Scripts
+            <div class="eruda-btn eruda-refresh-script">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+        </h2>
+        <ul class="eruda-link-list">
+            {{#if scriptData}}
+                {{#each scriptData}}
+                    <li>
+                        <a href="{{this}}" target="_blank" class="eruda-js-link">{{this}}</a>
+                    </li>
+                {{/each}}
+            {{else}}
+                <li>Empty</li>
+            {{/if}}
+        </ul>
+    </div>
+    
+    <div class="eruda-section eruda-iframe">
+        <h2 class="eruda-title">
+            Iframes
+            <div class="eruda-btn eruda-refresh-iframe">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+        </h2>
+        <ul class="eruda-link-list">
+            {{#if iframeData}}
+                {{#each iframeData}}
+                    <li>
+                        <a href="{{this}}" target="_blank" class="eruda-iframe-link">{{this}}</a>
+                    </li>
+                {{/each}}
+            {{else}}
+                <li>Empty</li>
+            {{/if}}
+        </ul>
+    </div>
+    
+    <div class="eruda-section eruda-image">
+        <h2 class="eruda-title {{imageState}}">
+            Image
+            <div class="eruda-btn eruda-refresh-image">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+        </h2>
+        <ul class="eruda-image-list">
+            {{#if imageData}}
+                {{#each imageData}}
+                    <li class="eruda-image">
+                        <img src="{{this}}" data-exclude="true" class="eruda-img-link"/>
+                    </li>
+                {{/each}}
+            {{else}}
+                <li>Empty</li>
+            {{/if}}
+        </ul>
+    </div>
+
+    </div>
+</div><!-- side-left --><!--
+
+
+
+--><div class="eruda-side-right eruda-scrollcontainer-right">
+    <div class="eruda-scrollcontent">
+
+    <h1>Storage</h1>
+    
+    <div class="eruda-section eruda-cookie">
+        <h2 class="eruda-title {{cookieState}}">
+            Cookies
+            <div class="eruda-btn eruda-refresh-cookie">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+            <div class="eruda-btn eruda-clear-cookie">
+                <span class="eruda-icon-clear"></span>
+            </div>
+        </h2>
+        <table>
+            <tbody>
+                {{#if cookieData}}
+                    {{#each cookieData}}
+                        <tr>
+                            <td class="eruda-key">{{key}}</td>
+                            <td>{{val}}</td>
+                            <td class="eruda-control">
+                                <span class="eruda-icon-delete eruda-delete-cookie" data-key="{{key}}"></span>
+                            </td>
+                        </tr>
+                    {{/each}}
+                {{else}}
+                    <tr>
+                        <td>Empty</td>
+                    </tr>
+                {{/if}}
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="eruda-section eruda-session-storage">
+        <h2 class="eruda-title">
+            Session Storage
+            <div class="eruda-btn eruda-refresh-session-storage">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+            <div class="eruda-btn eruda-clear-storage" data-type="session">
+                <span class="eruda-icon-clear"></span>
+            </div>
+        </h2>
+        <table>
+            <tbody>
+            {{#if sessionStoreData}}
+                {{#each sessionStoreData}}
+                    <tr>
+                        <td class="eruda-key">{{key}}</td>
+                        <td class="eruda-storage-val" data-key="{{key}}" data-type="session">{{val}}</td>
+                        <td class="eruda-control">
+                            <span class="eruda-icon-delete eruda-delete-storage" data-key="{{key}}" data-type="session"></span>
+                        </td>
+                    </tr>
+                {{/each}}
+            {{else}}
+                <tr>
+                    <td>Empty</td>
+                </tr>
+            {{/if}}
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="eruda-section eruda-local-storage">
+        <h2 class="eruda-title">
+            <!--div class="titlename"></div-->
+            Local Storage
+            <div class="eruda-btn eruda-refresh-local-storage">
+                <span class="eruda-icon-refresh"></span>
+            </div>
+            <div class="eruda-btn eruda-clear-storage" data-type="local">
+                <span class="eruda-icon-clear"></span>
+            </div>
+        </h2>
+        <table>
+            <tbody>
+                {{#if localStoreData}}
+                    {{#each localStoreData}}
+                        <tr>
+                            <td class="eruda-key">{{key}}</td>
+                            <td class="eruda-storage-val" data-key="{{key}}" data-type="local">{{val}}</td>
+                            <td class="eruda-control">
+                                <span class="eruda-icon-delete eruda-delete-storage" data-key="{{key}}" data-type="local"></span>
+                            </td>
+                        </tr>
+                    {{/each}}
+                {{else}}
+                    <tr>
+                        <td>Empty</td>
+                    </tr>
+                {{/if}}
+            </tbody>
+        </table>
+    </div>
+    
+    </div>
+</div><!-- side-right -->

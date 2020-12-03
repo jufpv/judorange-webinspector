@@ -1,0 +1,25 @@
+
+{{#if showLineNum}}
+    <div class="eruda-code-wrapper">
+        <table class="eruda-code">
+            <tbody>
+                <tr>
+                    <td class="eruda-gutter">
+                        {{#each code}}
+                            <div class="eruda-line-num">{{idx}}</div>
+                        {{/each}}
+                    </td>
+                    <td class="eruda-content">
+                        {{#each code}}
+                            <pre class="eruda-code-line">{{{val}}}</pre>
+                        {{/each}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{{else}}
+    <div class="eruda-code-wrapper">
+        <pre class="eruda-code">{{{code}}}</pre>
+    </div>
+{{/if}}

@@ -1,0 +1,47 @@
+@import '../style/variable';
+@import '../style/mixin';
+
+.dev-tools {
+  .tools {
+    .network {
+    
+      .network-scrollcontainer{ height:100%; overflow:auto; }
+      .network-scrollcontent{ height:100%!important; min-height:calc(100% + 2px)!important; }
+          
+      .title {
+        @include right-circle-btn();
+        color: #fe7e00;
+        padding-top:10px; padding-bottom:10px; padding-left:20px;
+        line-height:20px;
+        font-size:20px;
+        font-weight:600;
+      }
+      .requests {
+        background: #fff;
+        border-bottom: 1px solid $gray-light;
+        margin-bottom: 10px;
+        li {
+          @include overflow-auto(x);
+          cursor: pointer;
+          border-top: 1px solid $gray-light;
+          height: 41px;
+          white-space: nowrap;
+          &.error {
+            span{ color: $red; }
+          }
+          span {
+            display: inline-block;
+            line-height: 40px;
+            height: 40px;
+            padding: 0 10px;
+            font-size: $font-size-s;
+            vertical-align: top;
+          }
+          &:nth-child(even) {
+            background: $gray-light;
+          }
+        }
+      }
+    }
+  }
+}
